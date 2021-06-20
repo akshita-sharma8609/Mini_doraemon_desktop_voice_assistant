@@ -1,4 +1,4 @@
-"""============================================ PYTHON PROJECT: MINI DOAREMON - PERSONAL AI ASSISTANT ========================================="""
+"""============================================ PYTHON PROJECT: MINI DORAEMON - PERSONAL AI ASSISTANT ========================================="""
 
 import datetime
 import pyttsx3
@@ -23,7 +23,7 @@ def greetuser():
         speak("Good afternoon")
     else:
         speak("Good evening")
-    speak("I am mini doramon, How can i help you?")
+    speak("I am mini doraemon, How can i help you?")
 
 
 def takeinput():
@@ -57,15 +57,17 @@ if __name__=='__main__':
 
         try:
             query= takeinput().lower()
+            browser_name='chrome'
             browser_path="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+            
             if "introduction" in query or "about you" in query:
                 speak("My name is mini doraymon, i am an AI desktop assistant and My developer is akshita sharma")
 
-            elif ("who are you" in query) or  ( "your name" in query):
+            elif ("who are you" in query) or  ("your name" in query):
                 speak("My name is mini doraemon, i am an AI desktop assistant")
 
             elif "how are you" in query :
-                speak("I am fine,thank you,  Hope you are also doing well!")
+                speak("I am fine, thank you, Hope you are also doing well!")
 
             elif "wikipedia" in query:
                 print('Searching Wikipedia...')
@@ -78,18 +80,18 @@ if __name__=='__main__':
 
             elif ("open google" in query) or ("google" in query):
                 url='https://www.google.co.in/'
-                c=webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(browser_path))
-                webbrowser.get("chrome").open(url)
+                c=webbrowser.register(browser_name,None,webbrowser.BackgroundBrowser(browser_path))
+                webbrowser.get(browser_name).open(url)
 
             elif ("open youtube" in query) or ("youtube" in query):
                 url='https://www.youtube.com/'
-                c=webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(browser_path))
-                webbrowser.get('chrome').open(url)
+                c=webbrowser.register(browser_name,None,webbrowser.BackgroundBrowser(browser_path))
+                webbrowser.get(browser_name).open(url)
 
             elif ("open stack overflow" in query) or ("open stackoverflow" in query) or ("open stack over flow" in query) or ("stackoverflow" in query):
                 url='https://stackoverflow.com/'
-                c=webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(browser_path))
-                webbrowser.get('chrome').open(url)
+                c=webbrowser.register(browser_name,None,webbrowser.BackgroundBrowser(browser_path))
+                webbrowser.get(browser_name).open(url)
 
             elif ("open vs code" in query) or ("open visual studio code" in query) or ("open vscode" in query) or ("vscode" in query):
                 codepath="C:\\Users\\akshi\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
@@ -101,13 +103,13 @@ if __name__=='__main__':
 
             elif ("open github" in query) or  ("open git hub" in query) :
                 url='https://github.com/'
-                c=webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(browser_path))
-                webbrowser.get('chrome').open(url)
+                c=webbrowser.register(browser_name,None,webbrowser.BackgroundBrowser(browser_path))
+                webbrowser.get(browser_name).open(url)
 
             elif ("open mail" in query) or ("open email" in query) or ("open gmail" in query):
                 url='https://gmail.com/'
-                c=webbrowser.register('chrome',None,webbrowser.BackgroundBrowser(browser_path))
-                webbrowser.get('chrome').open(url)
+                c=webbrowser.register(browser_name,None,webbrowser.BackgroundBrowser(browser_path))
+                webbrowser.get(browser_name).open(url)
 
             elif "time" in query:
                 str_time=datetime.datetime.now().strftime("%H:%M:%S")
