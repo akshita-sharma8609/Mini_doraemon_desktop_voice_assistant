@@ -15,6 +15,6 @@ This is simple desktop voice assistant built using pyttsx3 and speech_recognitio
 ### Step 2: Install requirements.txt file
 ### Step 3: Update paths of given variables to your local paths
 
-browser_path
-music_dir
-codepath
+#### browser_path
+#### music_dir
+#### codepath
