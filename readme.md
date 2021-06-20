@@ -18,3 +18,4 @@ This is simple desktop voice assistant built using pyttsx3 and speech_recognitio
 #### browser_path
 #### music_dir
 #### codepath
+#### browser_name
